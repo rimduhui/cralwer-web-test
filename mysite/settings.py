@@ -25,7 +25,7 @@ SECRET_KEY = 'ux6bkz-#1hh*thv+^)pmmodm(2au0l(@ybx0bvs7fsjpj@%p^v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['news4meal.com']
 
 
 # Application definition
