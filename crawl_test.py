@@ -2,7 +2,9 @@ from selenium import webdriver
 
 def get_titles():
     options = webdriver.ChromeOptions()
-    options.add_argument("--disable-gpu")
+    options.add_argument('headless')
+    options.add_argument('window-size=1920x1080')
+    options.add_argument("disable-gpu")
 
     driver = webdriver.Chrome('chromedriver', chrome_options=options)
 
