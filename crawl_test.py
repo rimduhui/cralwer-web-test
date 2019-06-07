@@ -1,7 +1,14 @@
 from selenium import webdriver
 
 def get_titles():
-    driver = webdriver.Chrome("chromedriver")
+    options = webdriver.ChromeOptions()
+    options.add_argument('headless')
+    options.add_argument('window-size=1920x1080')
+    options.add_argument("disable-gpu")
+    # 혹은 options.add_argument("--disable-gpu")
+
+    driver = webdriver.Chrome('chromedriver', chrome_options=options)
+
     driver.get("http://www.naver.com")
     driver.find_element_by_xpath('//*[@id="query"]').send_keys("화장품")
     driver.find_element_by_xpath('//*[@id="search_btn"]/span[2]').click()
