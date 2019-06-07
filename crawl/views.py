@@ -7,5 +7,5 @@ import crawl_test
 
 def index(request):
 
-    titles = crawl_test.get_titles()
-    return HttpResponse(titles)
+    # titles = crawl_test.get_titles()
+    return HttpResponse("Success")
